@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7F92B831E0008F4009C0664 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F92B771E0008F4009C0664 /* Info.plist */; };
+		C7F92B841E0008F4009C0664 /* GlobeConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B781E0008F4009C0664 /* GlobeConnect.swift */; };
+		C7F92B851E0008F4009C0664 /* GlobeConnectAmax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B791E0008F4009C0664 /* GlobeConnectAmax.swift */; };
+		C7F92B861E0008F4009C0664 /* GlobeConnectAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7A1E0008F4009C0664 /* GlobeConnectAuthenticate.swift */; };
+		C7F92B871E0008F4009C0664 /* GlobeConnectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7B1E0008F4009C0664 /* GlobeConnectError.swift */; };
+		C7F92B881E0008F4009C0664 /* GlobeConnectHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7C1E0008F4009C0664 /* GlobeConnectHTTPRequest.swift */; };
+		C7F92B891E0008F4009C0664 /* GlobeConnectLocationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7D1E0008F4009C0664 /* GlobeConnectLocationQuery.swift */; };
+		C7F92B8A1E0008F4009C0664 /* GlobeConnectPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7E1E0008F4009C0664 /* GlobeConnectPayment.swift */; };
+		C7F92B8B1E0008F4009C0664 /* GlobeConnectSms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B7F1E0008F4009C0664 /* GlobeConnectSms.swift */; };
+		C7F92B8C1E0008F4009C0664 /* GlobeConnectSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B801E0008F4009C0664 /* GlobeConnectSubscriber.swift */; };
+		C7F92B8D1E0008F4009C0664 /* GlobeConnectUssd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B811E0008F4009C0664 /* GlobeConnectUssd.swift */; };
+		C7F92B8E1E0008F4009C0664 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B821E0008F4009C0664 /* JSON.swift */; };
+		C7F92B981E00090C009C0664 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F92B8F1E00090C009C0664 /* Info.plist */; };
+		C7F92B991E00090C009C0664 /* GlobeConnectAmaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B901E00090C009C0664 /* GlobeConnectAmaxTests.swift */; };
+		C7F92B9A1E00090C009C0664 /* GlobeConnectAuthenticateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B911E00090C009C0664 /* GlobeConnectAuthenticateTests.swift */; };
+		C7F92B9B1E00090C009C0664 /* GlobeConnectLocationQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B921E00090C009C0664 /* GlobeConnectLocationQueryTests.swift */; };
+		C7F92B9C1E00090C009C0664 /* GlobeConnectPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B931E00090C009C0664 /* GlobeConnectPaymentTests.swift */; };
+		C7F92B9D1E00090C009C0664 /* GlobeConnectSmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B941E00090C009C0664 /* GlobeConnectSmsTests.swift */; };
+		C7F92B9E1E00090C009C0664 /* GlobeConnectSubscriberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B951E00090C009C0664 /* GlobeConnectSubscriberTests.swift */; };
+		C7F92B9F1E00090C009C0664 /* GlobeConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B961E00090C009C0664 /* GlobeConnectTests.swift */; };
+		C7F92BA01E00090C009C0664 /* GlobeConnectUssdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F92B971E00090C009C0664 /* GlobeConnectUssdTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C776E88B1E00074800BD5F2B /* GlobeConnect.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobeConnect.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F92B761E0008F4009C0664 /* GlobeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobeConnect.h; path = GlobeConnect/GlobeConnect.h; sourceTree = SOURCE_ROOT; };
+		C7F92B771E0008F4009C0664 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GlobeConnect/Info.plist; sourceTree = SOURCE_ROOT; };
+		C7F92B781E0008F4009C0664 /* GlobeConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnect.swift; path = GlobeConnect/GlobeConnect.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B791E0008F4009C0664 /* GlobeConnectAmax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectAmax.swift; path = GlobeConnect/GlobeConnectAmax.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7A1E0008F4009C0664 /* GlobeConnectAuthenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectAuthenticate.swift; path = GlobeConnect/GlobeConnectAuthenticate.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7B1E0008F4009C0664 /* GlobeConnectError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectError.swift; path = GlobeConnect/GlobeConnectError.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7C1E0008F4009C0664 /* GlobeConnectHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectHTTPRequest.swift; path = GlobeConnect/GlobeConnectHTTPRequest.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7D1E0008F4009C0664 /* GlobeConnectLocationQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectLocationQuery.swift; path = GlobeConnect/GlobeConnectLocationQuery.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7E1E0008F4009C0664 /* GlobeConnectPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectPayment.swift; path = GlobeConnect/GlobeConnectPayment.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B7F1E0008F4009C0664 /* GlobeConnectSms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectSms.swift; path = GlobeConnect/GlobeConnectSms.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B801E0008F4009C0664 /* GlobeConnectSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectSubscriber.swift; path = GlobeConnect/GlobeConnectSubscriber.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B811E0008F4009C0664 /* GlobeConnectUssd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectUssd.swift; path = GlobeConnect/GlobeConnectUssd.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B821E0008F4009C0664 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = GlobeConnect/JSON.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B8F1E00090C009C0664 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GlobeConnectTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		C7F92B901E00090C009C0664 /* GlobeConnectAmaxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectAmaxTests.swift; path = GlobeConnectTests/GlobeConnectAmaxTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B911E00090C009C0664 /* GlobeConnectAuthenticateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectAuthenticateTests.swift; path = GlobeConnectTests/GlobeConnectAuthenticateTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B921E00090C009C0664 /* GlobeConnectLocationQueryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectLocationQueryTests.swift; path = GlobeConnectTests/GlobeConnectLocationQueryTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B931E00090C009C0664 /* GlobeConnectPaymentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectPaymentTests.swift; path = GlobeConnectTests/GlobeConnectPaymentTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B941E00090C009C0664 /* GlobeConnectSmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectSmsTests.swift; path = GlobeConnectTests/GlobeConnectSmsTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B951E00090C009C0664 /* GlobeConnectSubscriberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectSubscriberTests.swift; path = GlobeConnectTests/GlobeConnectSubscriberTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B961E00090C009C0664 /* GlobeConnectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectTests.swift; path = GlobeConnectTests/GlobeConnectTests.swift; sourceTree = SOURCE_ROOT; };
+		C7F92B971E00090C009C0664 /* GlobeConnectUssdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobeConnectUssdTests.swift; path = GlobeConnectTests/GlobeConnectUssdTests.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C776E8881E00074800BD5F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F4E8931DF0007A002AE15B = {
+			isa = PBXGroup;
+			children = (
+				C7F4E89F1DF0007A002AE15B /* GlobeConnect */,
+				C7F4E8AA1DF0007A002AE15B /* GlobeConnectTests */,
+				C7F4E89E1DF0007A002AE15B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F4E89E1DF0007A002AE15B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C776E88B1E00074800BD5F2B /* GlobeConnect.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F4E89F1DF0007A002AE15B /* GlobeConnect */ = {
+			isa = PBXGroup;
+			children = (
+				C7F92B761E0008F4009C0664 /* GlobeConnect.h */,
+				C7F92B771E0008F4009C0664 /* Info.plist */,
+				C7F92B781E0008F4009C0664 /* GlobeConnect.swift */,
+				C7F92B791E0008F4009C0664 /* GlobeConnectAmax.swift */,
+				C7F92B7A1E0008F4009C0664 /* GlobeConnectAuthenticate.swift */,
+				C7F92B7B1E0008F4009C0664 /* GlobeConnectError.swift */,
+				C7F92B7C1E0008F4009C0664 /* GlobeConnectHTTPRequest.swift */,
+				C7F92B7D1E0008F4009C0664 /* GlobeConnectLocationQuery.swift */,
+				C7F92B7E1E0008F4009C0664 /* GlobeConnectPayment.swift */,
+				C7F92B7F1E0008F4009C0664 /* GlobeConnectSms.swift */,
+				C7F92B801E0008F4009C0664 /* GlobeConnectSubscriber.swift */,
+				C7F92B811E0008F4009C0664 /* GlobeConnectUssd.swift */,
+				C7F92B821E0008F4009C0664 /* JSON.swift */,
+			);
+			name = GlobeConnect;
+			path = ConnectIOS;
+			sourceTree = "<group>";
+		};
+		C7F4E8AA1DF0007A002AE15B /* GlobeConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F92B8F1E00090C009C0664 /* Info.plist */,
+				C7F92B901E00090C009C0664 /* GlobeConnectAmaxTests.swift */,
+				C7F92B911E00090C009C0664 /* GlobeConnectAuthenticateTests.swift */,
+				C7F92B921E00090C009C0664 /* GlobeConnectLocationQueryTests.swift */,
+				C7F92B931E00090C009C0664 /* GlobeConnectPaymentTests.swift */,
+				C7F92B941E00090C009C0664 /* GlobeConnectSmsTests.swift */,
+				C7F92B951E00090C009C0664 /* GlobeConnectSubscriberTests.swift */,
+				C7F92B961E00090C009C0664 /* GlobeConnectTests.swift */,
+				C7F92B971E00090C009C0664 /* GlobeConnectUssdTests.swift */,
+			);
+			name = GlobeConnectTests;
+			path = ConnectIOSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C776E88A1E00074800BD5F2B /* GlobeConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C776E8901E00074800BD5F2B /* Build configuration list for PBXNativeTarget "GlobeConnect" */;
+			buildPhases = (
+				C776E8871E00074800BD5F2B /* Sources */,
+				C776E8881E00074800BD5F2B /* Frameworks */,
+				C776E8891E00074800BD5F2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlobeConnect;
+			productName = GlobeConnect;
+			productReference = C776E88B1E00074800BD5F2B /* GlobeConnect.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F4E8941DF0007A002AE15B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Openovate Labs";
+				TargetAttributes = {
+					C776E88A1E00074800BD5F2B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QM2DY2B48M;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C7F4E8971DF0007A002AE15B /* Build configuration list for PBXProject "GlobeConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7F4E8931DF0007A002AE15B;
+			productRefGroup = C7F4E89E1DF0007A002AE15B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C776E88A1E00074800BD5F2B /* GlobeConnect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C776E8891E00074800BD5F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F92B981E00090C009C0664 /* Info.plist in Resources */,
+				C7F92B831E0008F4009C0664 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C776E8871E00074800BD5F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F92B8C1E0008F4009C0664 /* GlobeConnectSubscriber.swift in Sources */,
+				C7F92BA01E00090C009C0664 /* GlobeConnectUssdTests.swift in Sources */,
+				C7F92B8E1E0008F4009C0664 /* JSON.swift in Sources */,
+				C7F92B861E0008F4009C0664 /* GlobeConnectAuthenticate.swift in Sources */,
+				C7F92B9C1E00090C009C0664 /* GlobeConnectPaymentTests.swift in Sources */,
+				C7F92B841E0008F4009C0664 /* GlobeConnect.swift in Sources */,
+				C7F92B8D1E0008F4009C0664 /* GlobeConnectUssd.swift in Sources */,
+				C7F92B9F1E00090C009C0664 /* GlobeConnectTests.swift in Sources */,
+				C7F92B851E0008F4009C0664 /* GlobeConnectAmax.swift in Sources */,
+				C7F92B881E0008F4009C0664 /* GlobeConnectHTTPRequest.swift in Sources */,
+				C7F92B9A1E00090C009C0664 /* GlobeConnectAuthenticateTests.swift in Sources */,
+				C7F92B8A1E0008F4009C0664 /* GlobeConnectPayment.swift in Sources */,
+				C7F92B891E0008F4009C0664 /* GlobeConnectLocationQuery.swift in Sources */,
+				C7F92B8B1E0008F4009C0664 /* GlobeConnectSms.swift in Sources */,
+				C7F92B871E0008F4009C0664 /* GlobeConnectError.swift in Sources */,
+				C7F92B9B1E00090C009C0664 /* GlobeConnectLocationQueryTests.swift in Sources */,
+				C7F92B9D1E00090C009C0664 /* GlobeConnectSmsTests.swift in Sources */,
+				C7F92B9E1E00090C009C0664 /* GlobeConnectSubscriberTests.swift in Sources */,
+				C7F92B991E00090C009C0664 /* GlobeConnectAmaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C776E8911E00074800BD5F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = QM2DY2B48M;
+				INFOPLIST_FILE = GlobeConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.openovatelabs.GlobeConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C776E8921E00074800BD5F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = QM2DY2B48M;
+				INFOPLIST_FILE = GlobeConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.openovatelabs.GlobeConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C7F4E8AF1DF0007A002AE15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7F4E8B01DF0007A002AE15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C776E8901E00074800BD5F2B /* Build configuration list for PBXNativeTarget "GlobeConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C776E8911E00074800BD5F2B /* Debug */,
+				C776E8921E00074800BD5F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F4E8971DF0007A002AE15B /* Build configuration list for PBXProject "GlobeConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F4E8AF1DF0007A002AE15B /* Debug */,
+				C7F4E8B01DF0007A002AE15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F4E8941DF0007A002AE15B /* Project object */;
+}
