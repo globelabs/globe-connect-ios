@@ -2,8 +2,8 @@
 //  GlobeConnectTests.swift
 //  GlobeConnectTests
 //
-//  Created by Rico Maglayon on 01/12/2016.
-//  Copyright © 2016 Openovate Labs. All rights reserved.
+//  Created by Rico Maglayon on 23/01/2017.
+//  Copyright © 2017 Openovate Labs. All rights reserved.
 //
 
 import XCTest
@@ -22,7 +22,8 @@ class GlobeConnectTests: XCTestCase {
     }
     
     func testExample() {
-        
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {

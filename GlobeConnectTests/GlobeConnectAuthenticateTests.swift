@@ -26,25 +26,25 @@ class GlobeConnectAuthenticate: XCTestCase {
         super.tearDown()
     }
 
-    func testGetAccessToken() {
-        let expectation = self.expectation(description: "testGetAccessToken")
-
-        self.globeConnect?.getAccessToken(
-            code: "M8s6gAarub9pebhgEAqKsxdByxHoM5kzf4Mp5js98Bzot8bqjrfaRdG4H4jknpFzr8gKtdx4jnUqbA8KsxqA48frR698IKLRb5S5LBxauo9EkxCMrzk6uorxGEu67Tay49aTxxzu8ozznukMEaXCBRB8GuKjR5MSpB65zIbkA8Bf5eA94se848KUb589RteGkdEFBEddEH6xqRyfjMBqatE4ppBsAe56Bfq4BkjHrXA9Rsqzp5RhMAA6Mu65MAds",
-            success: { json in                
-                expectation.fulfill()
-            }, failure: { error in
-                print(error)
-                expectation.fulfill()
-            })
-
-        waitForExpectations(timeout: 30, handler: nil)
-    }
-
-    func testGetRedirectUrl() {
-        let url = (self.globeConnect?.getAccessUrl())! as String
-        print(url)
-    }
+//    func testGetAccessToken() {
+//        let expectation = self.expectation(description: "testGetAccessToken")
+//
+//        self.globeConnect?.getAccessToken(
+//            code: "M8s6gAarub9pebhgEAqKsxdByxHoM5kzf4Mp5js98Bzot8bqjrfaRdG4H4jknpFzr8gKtdx4jnUqbA8KsxqA48frR698IKLRb5S5LBxauo9EkxCMrzk6uorxGEu67Tay49aTxxzu8ozznukMEaXCBRB8GuKjR5MSpB65zIbkA8Bf5eA94se848KUb589RteGkdEFBEddEH6xqRyfjMBqatE4ppBsAe56Bfq4BkjHrXA9Rsqzp5RhMAA6Mu65MAds",
+//            success: { json in                
+//                expectation.fulfill()
+//            }, failure: { error in
+//                print(error)
+//                expectation.fulfill()
+//            })
+//
+//        waitForExpectations(timeout: 30, handler: nil)
+//    }
+//
+//    func testGetRedirectUrl() {
+//        let url = (self.globeConnect?.getAccessUrl())! as String
+//        print(url)
+//    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

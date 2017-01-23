@@ -2,8 +2,8 @@
 //  GlobeConnect.h
 //  GlobeConnect
 //
-//  Created by Rico Maglayon on 01/12/2016.
-//  Copyright © 2016 Openovate Labs. All rights reserved.
+//  Created by Rico Maglayon on 23/01/2017.
+//  Copyright © 2017 Openovate Labs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
