@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:ConnectIOS.xcodeproj">
+      location = "self:GlobeConnectIOS.xcodeproj">
    </FileRef>
 </Workspace>

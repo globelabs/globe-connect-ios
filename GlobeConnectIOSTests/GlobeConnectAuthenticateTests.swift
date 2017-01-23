@@ -7,15 +7,15 @@
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
 class GlobeConnectAuthenticate: XCTestCase {
-    var globeConnect: GlobeConnect?
+    var globeConnect: GlobeConnectIOS?
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.globeConnect = GlobeConnect(
+        self.globeConnect = GlobeConnectIOS(
             appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
             appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e"
         )

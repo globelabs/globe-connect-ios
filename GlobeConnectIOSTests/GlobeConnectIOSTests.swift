@@ -1,15 +1,15 @@
 //
-//  GlobeConnectTests.swift
-//  GlobeConnectTests
+//  GlobeConnectIOSTests.swift
+//  GlobeConnectIOSTests
 //
 //  Created by Rico Maglayon on 23/01/2017.
 //  Copyright © 2017 Openovate Labs. All rights reserved.
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
-class GlobeConnectTests: XCTestCase {
+class GlobeConnectIOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

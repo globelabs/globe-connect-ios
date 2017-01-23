@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "032C73F1162F19A54C5FA6E0142F54A5C560918B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "032C73F1162F19A54C5FA6E0142F54A5C560918B" : 9223372036854775807,
+    "46D3540E8CBABBF4E531A407215A74DC23ADD11A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "163E0092-872D-4C28-99DF-3A7E90BCC6DD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "032C73F1162F19A54C5FA6E0142F54A5C560918B" : "globe-connect-ios\/",
+    "46D3540E8CBABBF4E531A407215A74DC23ADD11A" : "..\/globelabs"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GlobeConnectIOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GlobeConnectIOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:globelabs\/globe-connect-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "032C73F1162F19A54C5FA6E0142F54A5C560918B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Openovate\/globe-api.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46D3540E8CBABBF4E531A407215A74DC23ADD11A"
+    }
+  ]
+}

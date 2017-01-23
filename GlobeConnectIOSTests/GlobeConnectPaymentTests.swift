@@ -1,5 +1,5 @@
 //
-//  GlobeConnectUssdTests.swift
+//  GlobeConnectPaymentTests.swift
 //  GlobeConnect
 //
 //  Created by Rico Maglayon on 05/12/2016.
@@ -7,16 +7,17 @@
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
-class GlobeConnectUssdTests: XCTestCase {
-    var globeConnect: GlobeConnect?
+class GlobeConnectPaymentTests: XCTestCase {
+    var globeConnect: GlobeConnectIOS?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.globeConnect = GlobeConnect(
-            shortCode: "21584130",
+        self.globeConnect = GlobeConnectIOS(
+            appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
+            appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e",
             accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
         )
     }
@@ -26,51 +27,43 @@ class GlobeConnectUssdTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSendUssdRequest() {
-        let expectation = self.expectation(description: "testSendUssdRequest")
+    func testSendPaymentRequest() {
+        let expectation = self.expectation(description: "testSendPaymentRequest")
         
-        self.globeConnect?.sendUssdRequest(
-            address: "639271223448",
-            message: "Simple USSD Message\nOption - 1\nOption - 2",
-            flash: false,
+        self.globeConnect?.sendPaymentRequest(
+            amount: 0.00,
+            description: "My Application",
+            endUserId: "9271223448",
+            referenceCode: "41301000112",
+            transactionOperationStatus: "Charged",
             success: { json in
-                dump(json)
                 
                 expectation.fulfill()
             },
             failure: { error in
                 print(error)
-                
                 expectation.fulfill()
             }
         )
         
         waitForExpectations(timeout: 30, handler: nil)
-
     }
     
-    func testReplyUssdRequest() {
-        let expectation = self.expectation(description: "testReplyUssdRequest")
+    func testGetLastReferenceCode() {
+        let expectation = self.expectation(description: "testGetLastReferenceCode")
         
-        self.globeConnect?.replyUssdRequest(
-            address: "639271223448",
-            message: "Simple USSD Message\nOption - 1\nOption - 2",
-            sessionId: "012345678912",
-            flash: false,
+        self.globeConnect?.getLastReferenceCode(
             success: { json in
                 dump(json)
-                
                 expectation.fulfill()
             },
             failure: { error in
                 print(error)
-                
                 expectation.fulfill()
             }
         )
         
         waitForExpectations(timeout: 30, handler: nil)
-        
     }
     
     func testPerformanceExample() {

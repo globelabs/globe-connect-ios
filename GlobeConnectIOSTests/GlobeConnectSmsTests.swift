@@ -1,25 +1,19 @@
 //
-//  GlobeConnectPaymentTests.swift
+//  GlobeConnectSmsTests.swift
 //  GlobeConnect
 //
-//  Created by Rico Maglayon on 05/12/2016.
+//  Created by Rico Maglayon on 02/12/2016.
 //  Copyright © 2016 Openovate Labs. All rights reserved.
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
-class GlobeConnectPaymentTests: XCTestCase {
-    var globeConnect: GlobeConnect?
+class GlobeConnectSmsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.globeConnect = GlobeConnect(
-            appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
-            appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e",
-            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
-        )
     }
     
     override func tearDown() {
@@ -27,20 +21,25 @@ class GlobeConnectPaymentTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSendPaymentRequest() {
-        let expectation = self.expectation(description: "testSendPaymentRequest")
+    func testSendBinaryMessage() {
+        let expectation = self.expectation(description: "testSendBinaryMessage")
         
-        self.globeConnect?.sendPaymentRequest(
-            amount: 0.00,
-            description: "My Application",
-            endUserId: "9271223448",
-            referenceCode: "41301000112",
-            transactionOperationStatus: "Charged",
+        let globeConnect = GlobeConnectIOS(
+            shortCode: "21584130",
+            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
+        )
+        
+        globeConnect.sendBinaryMessage(
+            address: "09271223448",
+            message: "Lorem ipsum",
+            header: "06050423F423F4",
             success: { json in
+                dump(json)
                 
                 expectation.fulfill()
             },
             failure: { error in
+                print("error")
                 print(error)
                 expectation.fulfill()
             }
@@ -49,15 +48,24 @@ class GlobeConnectPaymentTests: XCTestCase {
         waitForExpectations(timeout: 30, handler: nil)
     }
     
-    func testGetLastReferenceCode() {
-        let expectation = self.expectation(description: "testGetLastReferenceCode")
+    func testSendMessage() {
+        let expectation = self.expectation(description: "testSendMessage")
         
-        self.globeConnect?.getLastReferenceCode(
+        let globeConnect = GlobeConnectIOS(
+            shortCode: "21584130",
+            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
+        )
+        
+        globeConnect.sendMessage(
+            address: "+639271223448",
+            message: "Lorem ipsum",
             success: { json in
                 dump(json)
+                
                 expectation.fulfill()
             },
             failure: { error in
+                print("error")
                 print(error)
                 expectation.fulfill()
             }

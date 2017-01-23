@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GlobeConnect {
+public class GlobeConnectIOS {
     public var appId: String?
     public var appSecret: String?
     public var shortCode: String?
