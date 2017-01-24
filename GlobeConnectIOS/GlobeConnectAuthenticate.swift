@@ -12,7 +12,7 @@ import SafariServices
 
 let kSafariViewControllerCloseNotification = "kSafariViewControllerCloseNotification"
 
-class Authenticate: UIViewController, SFSafariViewControllerDelegate {
+public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
     let authenticationPageURL = "https://developer.globelabs.com.ph/dialog/oauth"
     
     // Types
@@ -30,6 +30,7 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
     }
     
     public func login(
+        viewController: AnyObject?,
         appId: String,
         appSecret: String,
         success: SuccessHandler? = nil,
@@ -43,7 +44,7 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         safariViewController!.delegate = self
         
         // show it to the view
-        self.present(safariViewController!, animated: true, completion: nil)
+        viewController?.present(safariViewController!, animated: true, completion: nil)
         
         // create now an observer to listen for requests coming back to the app
         self.observer = NotificationCenter.default.addObserver(
@@ -55,7 +56,9 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
                 let responseURL = String(describing: extractedURL)
                 
                 // remove observer
-                NotificationCenter.default.removeObserver(self.observer!)
+                if (self.observer != nil) {
+                    NotificationCenter.default.removeObserver(self.observer!)
+                }
                 
                 // extract the code from the url
                 let code = self.extractCode(responseURL)
@@ -154,7 +157,7 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
             })
     }
     
-    internal func safariViewControllerDidFinish(
+    public func safariViewControllerDidFinish(
         _ controller: SFSafariViewController
     ) -> Void {
         controller.dismiss(animated: true, completion: nil)
