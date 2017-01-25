@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GlobeConnectIOS"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Globe Connect for iOS"
 
   # This description is used to generate tags and improve search results.
