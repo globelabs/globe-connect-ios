@@ -22,6 +22,9 @@ public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
     var safariViewController: SFSafariViewController?
     var observer = AnyObject?.self
     
+    //
+    // Notification Listener
+    //
     public func listenForRequest(url: URL) -> Void {
         NotificationCenter.default.post(
             name: Notification.Name(rawValue: kSafariViewControllerCloseNotification),
@@ -29,6 +32,9 @@ public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         )
     }
     
+    //
+    // Opens the Safari Browser and loads up the Login page.
+    //
     public func login(
         viewController: AnyObject?,
         appId: String,
@@ -92,6 +98,9 @@ public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         ) as? AnyObject?.Type
     }
     
+    //
+    // Extracts the code from the returned URL scheme and cleans it up
+    //
     internal func extractCode(_ urlString: String) -> String? {
         var code: String? = nil
         let url = URL(string: urlString)
@@ -105,6 +114,10 @@ public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         return code
     }
     
+    //
+    // Sends a request to the Globe API to generate an access token using
+    // the given credentials and code.
+    //
     internal func requestAccessToken(
         appId: String,
         appSecret: String,
@@ -157,6 +170,9 @@ public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
             })
     }
     
+    //
+    // Closes Safari
+    //
     public func safariViewControllerDidFinish(
         _ controller: SFSafariViewController
     ) -> Void {
