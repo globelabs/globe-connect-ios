@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension GlobeConnect {
+public extension GlobeConnectIOS {
     public func sendRewardRequest(
         address: String,
         promo: String,

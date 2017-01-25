@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension GlobeConnect {
+public extension GlobeConnectIOS {
     public func getLocation(
         address: String,
         accuracy: Int = 10,

@@ -1,19 +1,24 @@
 //
-//  GlobeConnectSmsTests.swift
+//  GlobeConnectUssdTests.swift
 //  GlobeConnect
 //
-//  Created by Rico Maglayon on 02/12/2016.
+//  Created by Rico Maglayon on 05/12/2016.
 //  Copyright © 2016 Openovate Labs. All rights reserved.
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
-class GlobeConnectSmsTests: XCTestCase {
+class GlobeConnectUssdTests: XCTestCase {
+    var globeConnect: GlobeConnectIOS?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.globeConnect = GlobeConnectIOS(
+            shortCode: "21584130",
+            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
+        )
     }
     
     override func tearDown() {
@@ -21,57 +26,51 @@ class GlobeConnectSmsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSendBinaryMessage() {
-        let expectation = self.expectation(description: "testSendBinaryMessage")
+    func testSendUssdRequest() {
+        let expectation = self.expectation(description: "testSendUssdRequest")
         
-        let globeConnect = GlobeConnect(
-            shortCode: "21584130",
-            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
-        )
-        
-        globeConnect.sendBinaryMessage(
-            address: "09271223448",
-            message: "Lorem ipsum",
-            header: "06050423F423F4",
+        self.globeConnect?.sendUssdRequest(
+            address: "639271223448",
+            message: "Simple USSD Message\nOption - 1\nOption - 2",
+            flash: false,
             success: { json in
                 dump(json)
                 
                 expectation.fulfill()
             },
             failure: { error in
-                print("error")
                 print(error)
+                
                 expectation.fulfill()
             }
         )
         
         waitForExpectations(timeout: 30, handler: nil)
+
     }
     
-    func testSendMessage() {
-        let expectation = self.expectation(description: "testSendMessage")
+    func testReplyUssdRequest() {
+        let expectation = self.expectation(description: "testReplyUssdRequest")
         
-        let globeConnect = GlobeConnect(
-            shortCode: "21584130",
-            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
-        )
-        
-        globeConnect.sendMessage(
-            address: "+639271223448",
-            message: "Lorem ipsum",
+        self.globeConnect?.replyUssdRequest(
+            address: "639271223448",
+            message: "Simple USSD Message\nOption - 1\nOption - 2",
+            sessionId: "012345678912",
+            flash: false,
             success: { json in
                 dump(json)
                 
                 expectation.fulfill()
             },
             failure: { error in
-                print("error")
                 print(error)
+                
                 expectation.fulfill()
             }
         )
         
         waitForExpectations(timeout: 30, handler: nil)
+        
     }
     
     func testPerformanceExample() {

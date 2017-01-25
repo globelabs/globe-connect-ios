@@ -1,5 +1,5 @@
 //
-//  GlobeConnectLocationQueryTests.swift
+//  GlobeConnectAmaxTests.swift
 //  GlobeConnect
 //
 //  Created by Rico Maglayon on 05/12/2016.
@@ -7,16 +7,17 @@
 //
 
 import XCTest
-@testable import GlobeConnect
+@testable import GlobeConnectIOS
 
-class GlobeConnectLocationQueryTests: XCTestCase {
-    var globeConnect: GlobeConnect?
+class GlobeConnectAmaxTests: XCTestCase {
+    var globeConnect: GlobeConnectIOS?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.globeConnect = GlobeConnect(
-            accessToken: "kk_my8_77bTbW48zi4ap6SlE4UuybXq_XAsE79IGwhA"
+        self.globeConnect = GlobeConnectIOS(
+            appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
+            appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e"
         )
     }
     
@@ -25,11 +26,13 @@ class GlobeConnectLocationQueryTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGetLocation() {
-        let expectation = self.expectation(description: "testGetLocation")
+    func testSendRewardRequest() {
+        let expectation = self.expectation(description: "testSendRewardRequest")
         
-        self.globeConnect?.getLocation(
-            address: "09271223448",
+        self.globeConnect?.sendRewardRequest(
+            address: "9271223448",
+            promo: "FREE10MB",
+            rewardsToken: "w7hYKxrE7ooHqXNBQkP9lg",
             success : { json in
                 dump(json)
                 expectation.fulfill()
@@ -39,7 +42,7 @@ class GlobeConnectLocationQueryTests: XCTestCase {
             }
         )
         
-        waitForExpectations(timeout: 40, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
     }
     
     func testPerformanceExample() {

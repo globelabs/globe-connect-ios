@@ -12,7 +12,7 @@ import SafariServices
 
 let kSafariViewControllerCloseNotification = "kSafariViewControllerCloseNotification"
 
-class Authenticate: UIViewController, SFSafariViewControllerDelegate {
+public class Authenticate: UIViewController, SFSafariViewControllerDelegate {
     let authenticationPageURL = "https://developer.globelabs.com.ph/dialog/oauth"
     
     // Types
@@ -22,6 +22,9 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
     var safariViewController: SFSafariViewController?
     var observer = AnyObject?.self
     
+    //
+    // Notification Listener
+    //
     public func listenForRequest(url: URL) -> Void {
         NotificationCenter.default.post(
             name: Notification.Name(rawValue: kSafariViewControllerCloseNotification),
@@ -29,7 +32,11 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         )
     }
     
+    //
+    // Opens the Safari Browser and loads up the Login page.
+    //
     public func login(
+        viewController: AnyObject?,
         appId: String,
         appSecret: String,
         success: SuccessHandler? = nil,
@@ -43,7 +50,7 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         safariViewController!.delegate = self
         
         // show it to the view
-        self.present(safariViewController!, animated: true, completion: nil)
+        viewController?.present(safariViewController!, animated: true, completion: nil)
         
         // create now an observer to listen for requests coming back to the app
         self.observer = NotificationCenter.default.addObserver(
@@ -55,7 +62,9 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
                 let responseURL = String(describing: extractedURL)
                 
                 // remove observer
-                NotificationCenter.default.removeObserver(self.observer!)
+                if (self.observer != nil) {
+                    NotificationCenter.default.removeObserver(self.observer!)
+                }
                 
                 // extract the code from the url
                 let code = self.extractCode(responseURL)
@@ -89,6 +98,9 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         ) as? AnyObject?.Type
     }
     
+    //
+    // Extracts the code from the returned URL scheme and cleans it up
+    //
     internal func extractCode(_ urlString: String) -> String? {
         var code: String? = nil
         let url = URL(string: urlString)
@@ -102,6 +114,10 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
         return code
     }
     
+    //
+    // Sends a request to the Globe API to generate an access token using
+    // the given credentials and code.
+    //
     internal func requestAccessToken(
         appId: String,
         appSecret: String,
@@ -154,7 +170,10 @@ class Authenticate: UIViewController, SFSafariViewControllerDelegate {
             })
     }
     
-    internal func safariViewControllerDidFinish(
+    //
+    // Closes Safari
+    //
+    public func safariViewControllerDidFinish(
         _ controller: SFSafariViewController
     ) -> Void {
         controller.dismiss(animated: true, completion: nil)
