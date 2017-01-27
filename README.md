@@ -18,6 +18,9 @@ for the installation instructions:
 
 ### Authenticate
 
+You need to setup a URL scheme in order for this work. Check this [link](https://github.com/globelabs/globe-connect-ios/blob/master/installation/url-schemes.md) 
+on how to setup a URL scheme in your XCode project.
+
 ```swift
 //
 //  sample implementation of login using the ViewController.swift file
