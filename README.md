@@ -10,24 +10,63 @@ application.
 
 ###### Figure 1. Authentication
 
+### Authenticate
+
 ```swift
-import GlobeConnect
+//
+//  sample implementation of login using the ViewController.swift file
+//
 
-let url = globeConnect.getAccessUrl()
-print(url)
+import UIKit
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
-    appId: "[APP ID]",
-    appSecret: "[APP SECRET]"
-)
+class ViewController: UIViewController {
 
-globeConnect.getAccessToken(
-    code: "[CODE]",
-    success: { json in
-        dump(json)
-    }, failure: { error in
-        print(error)
-    })
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func loginViaGlobe(_ sender: Any) {
+        let authenticate = Authenticate()
+
+        authenticate.login(
+            viewController: self,
+            appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
+            appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e",
+            success: { results in
+                // access token will returned here
+                print(results)
+            },
+            failure: { error in
+                print(error)
+            }
+        )
+    }
+}
+
+//
+// Add the following code at the bottom of your AppDelegate.swift file.
+// Make sure that a URL scheme is set for this to work.
+//
+
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+    if let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] {
+
+        if (String(describing: sourceApplication) == "com.apple.SafariViewService") {
+            let authenticate = Authenticate()
+            authenticate.listenForRequest(url: url)
+            return true
+        }
+    }
+
+    return true
+}
 ```
 
 ###### Figure 2. Amax
