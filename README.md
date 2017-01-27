@@ -6,6 +6,12 @@ Sms etc. that is easy to use and can be integrated in your existing iOS applicat
 some samples on how to use the SDK depending on the functionality that you need to integrate in your
 application.
 
+## Installation
+There are 2 ways to install the SDK either via the SDK Builder or via Cocoapods. Check out the links
+for the installation instructions:
+- [Manual (via SDK Builder)](https://github.com/globelabs/globe-connect-ios/blob/master/installation/manual.md)
+- [Cocoapods](https://github.com/globelabs/globe-connect-ios/blob/master/installation/cocoapods.md)
+
 ## Basic Usage
 
 ###### Figure 1. Authentication
@@ -72,9 +78,9 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpe
 ###### Figure 2. Amax
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     appId: "[APP ID]",
     appSecret: "[APP SECRET]"
 )
@@ -95,9 +101,9 @@ globeConnect.sendRewardRequest(
 ###### Figure 3. Binary SMS
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     shortCode: "[SHORT CODE]",
     accessToken: "[ACCESS TOKEN]"
 )
@@ -118,9 +124,9 @@ globeConnect.sendBinaryMessage(
 ###### Figure 4. Location
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     accessToken: "[ACCESS TOKEN]"
 )
 
@@ -137,9 +143,9 @@ globeConnect.getLocation(
 ###### Figure 5. Payment (Send Payment Request)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     appId: "[APP ID]",
     appSecret: "[APP SECRET]",
     accessToken: "[ACCESS TOKEN]"
@@ -162,9 +168,9 @@ globeConnect.sendPaymentRequest(
 ###### Figure 6. Payment (Get Last Reference ID)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     appId: "[APP ID]",
     appSecret: "[APP SECRET]",
     accessToken: "[ACCESS TOKEN]"
@@ -182,9 +188,9 @@ globeConnect.getLastReferenceCode(
 ###### Figure 7. Sms
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     shortCode: "[SHORT CODE]",
     accessToken: "[ACCESS TOKEN]"
 )
@@ -204,9 +210,9 @@ connect.sendMessage(
 ###### Figure 8. Subscriber (Get Balance)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     accessToken: "[ACCESS TOKEN]"
 )
 
@@ -223,9 +229,9 @@ globeConnect.getSubscriberBalance(
 ###### Figure 9. Subscriber (Get Reload Amount)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     accessToken: "[ACCESS TOKEN]"
 )
 
@@ -242,9 +248,9 @@ globeConnect.getSubscriberReloadAmount(
 ###### Figure 10. USSD (Send)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     shortCode: "[SHORT CODE]",
     accessToken: "[ACCESS TOKEN]"
 )
@@ -264,9 +270,9 @@ globeConnect.sendUssdRequest(
 ###### Figure 11. USSD (Reply)
 
 ```swift
-import GlobeConnect
+import GlobeConnectIOS
 
-let globeConnect = GlobeConnect(
+let globeConnect = GlobeConnectIOS(
     shortCode: "[SHORT CODE]",
     accessToken: "[ACCESS TOKEN]"
 )
