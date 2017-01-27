@@ -18,7 +18,7 @@ for the installation instructions:
 
 ### Authenticate
 
-You need to setup a URL scheme in order for this work. Check this [link](https://github.com/globelabs/globe-connect-ios/blob/master/installation/url-schemes.md) 
+You need to setup a URL scheme in order for this work. Check this [link](https://github.com/globelabs/globe-connect-ios/blob/master/installation/url-schemes.md)
 on how to setup a URL scheme in your XCode project.
 
 ```swift
@@ -46,8 +46,8 @@ class ViewController: UIViewController {
 
         authenticate.login(
             viewController: self,
-            appId: "5ozgSgeRyeHzacXo55TR65HnqoAESbAz",
-            appSecret: "3dbcd598f268268e13550c87134f8de0ec4ac1100cf0a68a2936d07fc9e2459e",
+            appId: "[APP ID]",
+            appSecret: "[APP SECRET]",
             success: { results in
                 // access token will returned here
                 print(results)
