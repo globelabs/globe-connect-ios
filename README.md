@@ -3,8 +3,8 @@
 
 ### Setting Up
 
-Please refer to this [link](https://github.com/globelabs/globe-connect-ios/blob/feature/documentation-installation/installation/manual.md) for manual installation of Globe Connect iOS SDK.
-        <br/>Please refer to this [link](https://github.com/globelabs/globe-connect-ios/blob/feature/documentation-installation/installation/cocoapods.md) for Globe Connect iOS SDK installtion via CocoaPods.
+Please refer to this <a target="_blank" href="https://github.com/globelabs/globe-connect-ios/blob/feature/documentation-installation/installation/manual.md">link</a> for manual installation of Globe Connect iOS SDK.
+        <br/>Please refer to this <a target="_blank" href="https://github.com/globelabs/globe-connect-ios/blob/feature/documentation-installation/installation/cocoapods.md">link</a> for Globe Connect iOS SDK installtion via CocoaPods.
 
 ### Authentication
 
@@ -482,7 +482,7 @@ globeConnect.getLocation(
 
 #### Overview
 
-TODO
+Subscriber Data Query API interface allows a Web application to query the customer profile of an end user who is the customer of a mobile network operator.
 
 #### Subscriber Balance
 
