@@ -511,9 +511,9 @@ globeConnect.getSubscriberBalance(
 
 ```json
 {
-    terminalLocationList:
+    "terminalLocationList":
     {
-        terminalLocation:
+        "terminalLocation":
         [
             {
                 address: "639171234567",
@@ -551,9 +551,9 @@ globeConnect.getSubscriberReloadAmount(
 
 ```json
 {
-    terminalLocationList:
+    "terminalLocationList":
     {
-        terminalLocation:
+        "terminalLocation":
         [
             {
                 address: "639171234567",
